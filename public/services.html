@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>services</title>
+</head>
+        <body class="container-fluid">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span></button>
+                <span class="navbar-brand fs-1 fw-bold pt-0">nisum</span>
+                <div class="navbar-collapse collapse"id="menu">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item"><a class="nav-link bi bi-house">Home</a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-question-circle">About</a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-truck">Services</a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-phone">Contact us</a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <button data-bs-toggle="dropdown"class="btn btn-primary dropdown-toggle"><span class="bi bi-person-circle"></span>
+                            Sign up
+                        </button>
+                        <ul class="dropdown-menu"data-bs-theme="dark">
+                            <li class="dropdown-item"data-bs-toggle="modal" data-bs-target="#signup"><a class="dropdown-item-text text-decoration-none">
+                                <span class="bi bi-box-arrow-in-right">
+                                    Signup</span></a></li>
+                                    <li class="dropdown-item"data-bs-toggle="modal" data-bs-target="#login"><a class="dropdown-item-text text-decoration-none">
+                                        <span class="bi bi-box-arrow-in-right">
+                                            Login</span></a></li>
+                                <li class="dropdown-item"data-bs-toggle="modal" data-bs-target="#forgot"><a class="dropdown-item-text text-decoration-none"><span class="bi bi-lock">     
+                                Forgot Password</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal fade" id="signup">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <form class="border mt-4 w-100 border-1 border-secondary rounded p-4">
+                                        <div class="bi bi-person-circle fs-4 fw-bold mb-3 text-primary">Register User</div>
+                                        <div class ="mb-4">
+                                            <label class="form-label text-primary">User Name</label>
+                                            <div>
+                                                <input class="form-control"placeholder="Full Name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label text-primary">Password</label>
+                                            <div>
+                                                <input type="Password" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label text-primary">Your City</label>
+                                            <div>
+                                                <select class="form-select">
+                                                    <option>Select City</option>
+                                                    <option>Delhi</option>
+                                                    <option>Hyd</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label text-primary">Subscribe</label>
+                                            <div class="form-switch">
+                                                <input checked class="form-check-input"type="checkbox">
+                                                <label class="form-check-label">Yes</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary" w-100>Register</button>
+                                        </div>
+                                    </form>
+                                    
+                </div>
+                </div>
+                </div>
+               </div>
+                    <div class="modal fade" id="login">
+                        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="bi bi-person-circle text-primary "> User Login </h3>
+                                    <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <dl>
+                                        <dt class="text-primary">User Name</dt>
+                                        <dd><input type="text" class="form-control"></dd>
+                                        <dt class="text-primary">E-mail</dt>
+                                        <dd><input type="text" class="form-control"></dd>
+                                        <dt class="text-primary">Mobile number </dt>
+                                        <dd><input type="text"placeholder="e.g: +91 10 digits" class="form-control"></dd>
+                                        <dt class="text-primary">Enter password</dt>
+                                        <dd><input type="text" class="form-control"></dd>
+                                    </dl>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="forgot">
+                        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="bi bi-person-circle text-primary"> Change Password </h3>
+                                    <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <dt class="text-primary">Enter New Password</dt>
+                                        <dd><input type="text" class="form-control"></dd>
+                                        <dt class="text-primary">Confirm Password</dt>
+                                        <dd><input type="password" class="form-control"></dd>
+                                    </dl>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary text-dark text-center btn btn-center">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-4 d-flex flex-wrap">
+                        <div class="card m-2 p-2" style="width: 200px;">
+                            <img src="/public/images/card7.jpg" class="card-img-top" height="120">
+                            </div>
+                            </div>
+                            <div class="card m-2 p-2" style="width: 200px;">
+                                <img src="/public/images/card8.jpg" class="card-img-top" height="120">
+</body>
+</html>
+
+
+
+
